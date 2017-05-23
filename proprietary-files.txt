@@ -1,6 +1,4 @@
 # Getting to work markw
-#vendor/lib/libNimsWrap.so
-#vendor/lib64/libNimsWrap.so
 vendor/lib/libcneconn.so
 vendor/lib64/libcneconn.so
 # Consumer IR
@@ -27,11 +25,11 @@ vendor/etc/msm_irqbalance.conf
 vendor/lib/libqc-opt.so
 vendor/lib64/libqc-opt.so
 etc/permissions/com.qti.snapdragon.sdk.display.xml
--vendor/app/colorservice/colorservice.apk
+###vendor/app/colorservice/colorservice.apk
 vendor/bin/mm-pp-daemon
 vendor/lib64/libmm-als.so
-vendor/lib64/libmm-disp-apis.so
-vendor/lib64/libmm-qdcm.so
+####vendor/lib64/libmm-disp-apis.so
+###vendor/lib64/libmm-qdcm.so
 vendor/lib/libvqzip.so
 bin/qmuxd
 etc/data/qmi_config.xml
@@ -138,18 +136,6 @@ bin/wcnss_filter
 vendor/lib/libbtnv.so
 vendor/lib64/libCommandSvc.so
 vendor/lib64/libbtnv.so
-
-# Bluetooth firmware
-#etc/firmware/nvm_tlv.bin
-#etc/firmware/nvm_tlv_1.3.bin
-#etc/firmware/nvm_tlv_2.1.bin
-#etc/firmware/nvm_tlv_3.0.bin
-#etc/firmware/nvm_tlv_3.2.bin
-#etc/firmware/rampatch_tlv.img
-#etc/firmware/rampatch_tlv_1.3.tlv
-#etc/firmware/rampatch_tlv_2.1.tlv
-#etc/firmware/rampatch_tlv_3.0.tlv
-#etc/firmware/rampatch_tlv_3.2.tlv
 
 # CNE
 -priv-app/CNEService/CNEService.apk
@@ -1673,7 +1659,7 @@ bin/qseecomd
 vendor/bin/qseeproxydaemon
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libcppf.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
+# vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/libGPTEE.so
 vendor/lib64/libGPreqcancel.so
@@ -1690,7 +1676,7 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsecureuisvc_jni.so
 vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+# vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
 # Display calibration
 -etc/qdcm_calib_data_nt35596_1080p_video_EBBG.xml
@@ -1779,68 +1765,77 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 
 # Graphics
--vendor/lib/libsdm-disp-apis.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
 vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/egl/libQTapGLES.so
 vendor/lib/hw/vulkan.msm8953.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
 vendor/lib/libc2d30-a5xx.so
 vendor/lib/libc2d30_bltlib.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libllvm-qgl.so
-vendor/lib/libmm-disp-apis.so
-vendor/lib/libmm-qdcm.so
 vendor/lib/libmmQSM.so
+vendor/lib/libOpenCL.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
-vendor/lib/libscale.so
-vendor/lib/libsd_sdk_display.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libsdm-disp-apis.so
+
+#########vendor/lib/egl/libq3dtools_esx.so
+##############vendor/lib/libmm-qdcm.so
+
+
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/hw/vulkan.msm8953.so
--vendor/lib64/libsdm-disp-apis.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libbccQTI.so
 vendor/lib64/libc2d30-a5xx.so
 vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
 vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
-vendor/lib64/libmm-disp-apis.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libmm-qdcm.so
 vendor/lib64/libmmQSM.so
+vendor/lib64/libOpenCL.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libsdm-disp-apis.so
+
+#########vendor/lib/egl/libq3dtools_esx.so
+##############vendor/lib/libmm-qdcm.so
+###########vendor/lib64/libmm-disp-apis.so
+###################vendor/lib64/libmm-hdcpmgr.so
+
+# Display
+vendor/lib/libscalar.so
+###vendor/lib/libscale.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libsdmextension.so
+vendor/lib/libsd_sdk_display.so
+
 vendor/lib64/libscalar.so
-vendor/lib64/libscale.so
-vendor/lib64/libsd_sdk_display.so
+###vendor/lib64/libscale.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdmextension.so
-# vendor/lib64/libuiblur.so
+vendor/lib64/libsd_sdk_display.so
 
 # Graphics firmware
 etc/firmware/a506_zap.b00
@@ -2089,4 +2084,4 @@ etc/firmware/ice40.bin
 bin/cnss-daemon
 bin/cnss_diag
 bin/wcnss_service
-lib/modules/pronto/pronto_wlan.ko:lib/modules/wlan.ko 
+#lib/modules/pronto/pronto_wlan.ko:lib/modules/wlan.ko 

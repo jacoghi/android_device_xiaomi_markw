@@ -88,7 +88,7 @@ debug.sf.hw=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.mdpcomp.enable=true
-ro.build.display.wtid=SW_S88553AA1_V066_M21_MP_XM
+#ro.build.display.wtid=SW_S88553AA1_V066_M21_MP_XM
 ro.opengles.version=196610
 ro.sf.lcd_density=480
 

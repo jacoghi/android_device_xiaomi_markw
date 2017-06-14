@@ -2,6 +2,9 @@
 # system.prop for markw
 #
 
+# Temporary workaround for camera
+persist.camera.HAL3.enabled=0
+
 # Art
 ro.sys.fw.dex2oat_thread_count=4
 
@@ -80,11 +83,11 @@ persist.dpm.feature=1
 persist.debug.coresight.config=stm-events
 
 # Display
-debug.egl.hw=0
+debug.egl.hw=1
 debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
-debug.sf.hw=0
+debug.sf.hw=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.mdpcomp.enable=true
